@@ -11,6 +11,7 @@
     <header id="header">
       <h1>Prework Study Guide</h1>
       <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -75,21 +76,85 @@
         <ul>
           <li>git status: checks what branch we are currently on</li>
           <li>git checkout -b branch-name: creates a new branch and switches to it</li>
-          <li>notes here</li>
+          <li>CSS stands for Cascading Style Sheets.</li>
+          <li>A link element creates the connection to the exteral file</li>
+          <li>The rel attribute specifies the relationship between the current document and the linked document resource.</li>
+          <li>The href attribute specifies the location (URL) of the external resource.</li>
+          <li>The href attribute is using a relative path. This means the location is derived from the current location.</li>
+          <li>To locate the style sheet from the current location, we must look in the assets folder, hence assets/style.css</li>
+          <li>Write new declarations for a new CSS rule by designating a class attribute as the selector.</li>
+          <li>Class attributes allow us to share a CSS rule to any element we choose by assigning the rule to a class attribute with a class selector.</li>
+          <li>The class attribute can be assigned to the element in the HTML, enabling us to freely choose which elements will be assigned the CSS rule.</li>
+          <li>A margin indicates how much space we want around the outside of an element.</li>
+          <li>A padding indicates how much space we want around the content inside an element.</li>
+          <li>1. git add -A (Adding the changed files in our working directory to the staging area of Git.)</li>
+          <li>2. git commit -m "name" (Now that all of the changes have been staged, we can commit to our repository.)</li>
+          <li>3. git pull origin main (Make sure that the current branch is up to date before opening a pull request.)</li>
+          <li>4. git push origin file-name (Pushes up all of the changes)</li>
+          <li>5. Navigate to the repository on GitHub. Click the "Pull Requests" tab and then the "New pull request" button.</li>
+          <li>6. Make sure the base branch is main and the comparison branch is the file-name branch. Add a title for the pull request along with a short description of the changes.</li>
+          <li>7. Click the "Create pull request" button.</li>
+          <li>8. Now merge the comparison branch into the base branch by selecting the "Merge pull request" button and then confirming the merge request.</li>
+          <li>9. Update the local main branch. In the command line, navigate to the main branch by entering git checkout main</li>
+          <li>10. Then pull the remote main branch into the local main branch by entering the command git pull origin main</li>
         </ul>
       </section>
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
         <ul>
-          <li>notes here</li>
-          <li>notes here</li>
-          <li>notes here</li>
-        </ul>
+          <li>JS is a high-level dynamic programming language that allows users to interact with websites.</li>
+          <li>Using JS, you can power your websites with effects, interactivity, data communication, and much more.</li>
+          <li>JS is the tool that takes a static HTML/CSS webpage and makes it interactive (ex. clicking a button, retrieve data, fill out a form)</li>
+          <li>JS is a dynamic language with dynamic types (dynamic type checking is the process of verifying the type safety of a program at runtime).</li>
+          <li>A variable is simply a named container that allows us to store data in our code.</li>
+          <li>In JS, to declare a variable, we use the var keyword.</li>
+          <li>After the var keyword, we give the variable a name. This name must be unique because it is how we will reference the information stored in the variable in our code.</li>
+          <li>Use an assignment operator = to assign the specific data that we want stored in our variable.</li>
+          <li>Example: In the example involving a container named "shape" that stores a circle, we can express that in JS by var shape ="circle";</li>
+          <li>By typing var topics ="HTML, CSS, Git, JavaScript"; we've created a variable called topics.</li>
+          <li>The topics variable contains a sstring that inclues all of the topics we are studying in this module.</li>
+          <li>The string is contained wiithin quotation marks. All strings are surrounded by quotation marks. EAch line of JS code ends with a semicolon.</li>
+          <li>To access the string "HTML, CSS, Git, JavaScript" refer to the variable's name, topics.</li>
+          <li>On mac, to inspect website, Command+Option+I</li>
+          <li>On windows, to inspect website, Control+Shift+I</li>
+          <li>1. Create a new JavaScript file.</li>
+          <li>2. In that file, add a variable "name" with a value of a string "list".</li>
+          <li>3. Use the console.log method to log the variable to the web console in the browser.</li>
+          <li>4. Ex. We connected script.js to index.html by adding a script element under the footer.</li>
+          <li>5. Add a message to the header to improve the user's experience by reminding them to open the console.</li>
+          <li>6. Open Chrome DevTools to find the value of topics being logged to the console, as expected.</li>
+          <li>Control Flow is the order in which a computer executes code in a script. In JS, code runs from the first statement at the top of the page, down to the last statement at the bottom of the page.</li>
+          <li>An if statement is a way of introducing decision-making into our code.</li>
+          <li>When using an if statement, code will only execute if the statement meets a condition, or is true.</li>
+          <li>if (condition) { </li>
+          <li> // block of code to be executed if condition is truthy</li>
+          <li>}</li>
+          <li>When the computer encounters an if statement in a JS file, it will check to see if the condition we provide is truthy. If it is, then it will do whatever action we ask it to do in between the curly brackets.</li>
+          <li>If the condition isn't true or has a value that isn't truthy, then the computer will ignore whatever it is between the curly brackets and move on.</li>
+          <li>We can have more than one condition in JS</li>
+          <li>if (first condition)</li>
+          <li>  // block of code to be executed if first condition is truthy</li>
+          <li>} else if (second condition) {</li>
+          <li>  // block of code to be executed if second condition is truthy</li>
+          <li>}</li>
+          <ls>The computer will continue through all of the conditions, evaluating whether or not a condition is truthy</ls>
+          <ls>Once it finds a condition that is truthy, it will run the code in the curly brackets associated with that condition, and then break out of the if statement.</ls>
+          <li>The strict equality operator (===) checks to see if two values are equal, and returns a Boolean result true if the values are equal and false if the values are not equal.</li>
+          <li>Typically, JS code is executed from top to bottom, but using conditional statements such as if statements allows us to interrupt control flow.</li>
+          <li>An array is a single variable that is used to hold a group of data. Arrays are typically used to hold data that is related in some way.</li>
+          <li>Ex. var shapes = ["triangle", "square", "pentagon", "circle"];</li>
+          <ls>A single array can store different types of data, such as strings, numbers, and so on.</ls>
+          <li>Arrays are useful tools for storing multiplr items with different data types in a single variable, but not all arrays must have multiple data types.</li>
+          <li>Example: The following array stores information about a student named Lu, including his name, age, and whether he is currently enrolled: var studentInfo = ["Lu", 54, true];</li>
+          <li>The location of the data item in the array, identified with a unique number, is called an index.</li>
+          <li>A for loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over.</li>
+          <li>In order to use a for loop, we need the shape's index and the array's length.</li>
       </section>
     </main>
 
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
